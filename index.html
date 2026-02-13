@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>G5 Class - App de Chinois</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "imperial-red": "#bd002c",
+                        "imperial-gold": "#D4AF37",
+                        "rice-paper": "#f8f5f6",
+                        "ink-black": "#181012",
+                        "muted-ink": "#8d5e69",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                        calligraphy: ["Ma Shan Zheng", "cursive"],
+                    },
+                    backgroundImage: {
+                        "zen-pattern": "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAHY5bnzWLu2vMxRuEtPHtztLfEhdG-wN505ltZhEN4L7N25RiYMTVaBiZPaVCjFl-1kkxLNfCtpwj06eh_IJ0FIVt6GKMnmzaGiUbhSEq1cXfw-5IDxTRUgCNsGBKRoACmvh4uxJDB1yErqhoRxBcte8Kf3oRuNf-1VT_pbLkB2upSsVDXmAmP11kgs_fViAf5F9jVt3c-miBpYb6pUia32jIWwcfN3nVtvC9vzYQmKJDX3-V7VBdFlqW203x23m8B6JRLWRH7BS4')",
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            /* Prevent pull-to-refresh on mobile */
+            overscroll-behavior-y: none;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom Scrollbar for nicer look on desktop */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D4AF37;
+            border-radius: 3px;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2.39.3"
+  }
+}
+</script>
+</head>
+<body class="bg-rice-paper text-ink-black h-screen overflow-hidden">
+    <div id="root" class="h-full w-full flex flex-col"></div>
+</body>
+</html>
